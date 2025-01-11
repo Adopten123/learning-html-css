@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1 align="center">Programming on CPP</h1>
+    <img src="images/iso_cpp.png" height="100" align="left" hspace = 5>
     <p> C++ (читается си-плюс-плюс) — компилируемый, статически типизированный язык программирования общего назначения. </p>
     <p> Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование.</p>
 
@@ -22,5 +23,43 @@
 <br>Я за это всю жизнь прохожу хоть в железной рубахе
 <br>И для казни петровской в лесах топорище найду.
 
+<hr>
+<p> Теорема Пифагора a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+<p> Вода - это H<sub>2</sub>O</p>
+<hr>
+
+<h2 align="center">Стандарты</h2>
+<ul>
+    <li>С++11
+    <li>C++14
+    <li>C++17
+    <li>C++20
+    <li>C++23
+    <Li>C++26
+</ul>
+<hr>
+<h2 align="center">Листинг программы</h2>
+<pre>
+class Figure
+{
+public:
+    virtual void Draw() = 0; // чистый виртуальный метод
+    virtual ~Figure();       // при наличии хотя бы одного виртуального метода деструктор следует сделать виртуальным
+};
+
+class Square : public Figure
+{
+public:
+    void Draw() override;
+};
+
+class Circle : public Figure
+{
+public:
+    void Draw() override;
+};
+</pre>
+<hr align="left" width="50%" size=1>
+<p>&copy; Все права защищены! &lt;Статья была подготовлена adopten&gt;</p>
 </body>
 </html>
